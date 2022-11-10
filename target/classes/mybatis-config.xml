@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias  type="com.fish.web.domain.MemberVO" alias="MemberVO"/> <!-- MemberVO클래스의 이름을 MemberVO로 치환 -->
+	</typeAliases>
+	
+    <mappers>
+      <mapper resource="com/fish/mapper/Member-Mapper.xml" /><!-- Memberjoin 쿼리 -->   
+    </mappers>
+</configuration>

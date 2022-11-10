@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "com.fish.web.dao.impl">
+
+    <insert id="InsertMember" parameterType="MemberVO">
+       insert into fishing.member values
+       (#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberHP}, 0, NOW())
+    </insert>
+
+</mapper>
