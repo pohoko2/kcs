@@ -1,6 +1,7 @@
 package com.fish.web.controller;
 
 
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,31 +25,27 @@ public class MemberController {
 	// 회원가입 처리 동작
 	// http://localhost:8088/member/signup
 	
-	@RequestMapping(value="/signup", method=RequestMethod.GET)
-	public String InsertGET() throws Exception {
-		I.info("회원가입 입력페이지 GET");
-		return "";		
+	
+	//회원가입 페이지 이동
+	@RequestMapping(value="signup", method=RequestMethod.GET)
+	public void JoinGET() {
+		I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 회원가입 입력페이지 이동");
 	}
 	
-	
-	@RequestMapping(value="/signup", method = RequestMethod.POST)
-	public String InsertPOST(MemberVO member) throws Exception {
+	// 회원가입
+	@RequestMapping(value="/member/signup", method = RequestMethod.POST)
+	public String Register_Action(MemberVO member) throws Exception {
 		
 		// 1.한글처리 : request객체가 없다 => web.xml에서 filter태그로 인코딩 해두었다.
 		
-		// 2.전달된 파라미터값 받기
-		// request.getParameter라는 내장객체가 없다. 따라서 메서드의 매개변수를 통해 가져올수있다.
-	    I.info("Log" + member);
-
-	    // 3.서비스객체 생성(직접생성안하고 의존주입)
-	    // 3-2.서비스객체 호출
-	    
-	    service.InsertMember(member);
-		I.info("회원가입 처리페이지 POST");
+		I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 회원가입 진입");
 		
-	    // 4. 로그인페이지로 이동
-		return "redirect:/member/login";
-	
-	}
-	
+			
+			// 2.회원가입 서비스 실행
+			service.InsertMember(member);
+			I.info("회원가입 처리성공 POST");
+		
+		
+		return "";	
+	}	
 }
