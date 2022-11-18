@@ -4,8 +4,9 @@
 <mapper namespace = "com.fish.web.dao.impl">
 
     <insert id="InsertMember" parameterType="MemberVO">
-       insert into fishing.member values
-       (#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberHP}, 0, NOW())
+      
+       insert into fishing.member 
+       values (#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberHP}, 0, NOW())
     </insert>
 
 </mapper>

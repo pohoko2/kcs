@@ -51,7 +51,7 @@ public class MemberController
 		String pass = passwordEncoder.encode(inputPass);
 		member.setMemberPw(pass);		
 		
-		// 3.회원가입 서비스 실행..
+		// 3.회원가입 서비스 실행...
 		service.InsertMember(member);
 		I.info("회원가입 처리성공 POST");
 	
