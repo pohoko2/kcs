@@ -57,7 +57,7 @@ public class MemberController
 		return "";	
 	}	
 	
-	// 회원 ID 중복체크 ajax 컨트롤러
+	// 회원 ID 중복체크 ajax 컨트롤러.
 //	@RequestMapping(value="/MemberIdCk", method = RequestMethod.POST)
 	//public String MemberDupleIdCk() {
 		
