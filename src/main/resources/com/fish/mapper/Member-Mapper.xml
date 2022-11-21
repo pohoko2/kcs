@@ -19,7 +19,7 @@
     <insert id="InsertMember" parameterType="MemberVO">
       
        insert into fishing.member 
-       values (#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberIdCk}, #{memberHP}, 0, NOW())
+       values (#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberHP}, 0, NOW())
        
     </insert>
 
