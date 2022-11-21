@@ -23,12 +23,17 @@ public class MemberDAOImpl implements MemberDAO {
 		this.sqlSession = sqlSession;
 	}
 	
-	// 회원가입구현 -> Member-Mapper.xml 
+	// 회원가입구현 -> Member-Mapper.xml -> ID="InsertMember"
 	@Override
 	public void InsertMember(MemberVO member) {
-		sqlSession.insert(namespace +".InsertMember", member);	
+		sqlSession.insert(namespace + ".InsertMember", member);	
 	}
 	
+	// 회원 ID 중복 체크 -> Member-Mapper.xml -> ID="MemberIdCk"
+	@Override
+	public int DupleIdCk(MemberVO member) {
+		return sqlSession.selectOne(namespace + ".DupleIdCk" , member);
+	}
 	
   	
 }

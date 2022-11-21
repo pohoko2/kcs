@@ -6,6 +6,7 @@ public class MemberVO {
 	private String memberPw;   	 // 회원 패스워드
 	private String memberName;	 // 회원 닉네임
 	private String memberMail;   // 회원 메일주소
+	private int memberIdCk;      // 회원 ID 중복 체크
 	private int memberHP;     	 // 회원 핸드폰번호
 	private int adminCk;      	 // 관리자 체크
 	private int regDate;       	 // 가입 등록 날짜
@@ -35,6 +36,12 @@ public class MemberVO {
 	public void setMemberMail(String memberMail) {
 		this.memberMail = memberMail;
 	}
+	public int getMemberIdCk() {
+		return memberIdCk;
+	}
+	public void setMemberIdCk(int memberIdCk) {
+		this.memberIdCk = memberIdCk;
+	}
 	public int getMemberHP() {
 		return memberHP;
 	}
@@ -53,12 +60,12 @@ public class MemberVO {
 	public void setRegDate(int regDate) {
 		this.regDate = regDate;
 	}
-	
 	@Override
 	public String toString() {
-		return "memberVO [memberId=" + memberId + ", memberPw=" + memberPw + ", memberName=" + memberName
-				+ ", memberMail=" + memberMail + ", memberHP=" + memberHP + ", adminCk=" + adminCk + ", regDate="
-				+ regDate + "]";
+		return "MemberVO [memberId=" + memberId + ", memberPw=" + memberPw + ", memberName=" + memberName
+				+ ", memberMail=" + memberMail + ", memberIdCk=" + memberIdCk + ", memberHP=" + memberHP + ", adminCk="
+				+ adminCk + ", regDate=" + regDate + "]";
 	}
+	
 		
 }
