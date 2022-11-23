@@ -7,20 +7,27 @@
     <!-- 회원가입 중복 확인 여부 쿼리 : memberIdCk의 값 존재유무 확인 -->
     <!-- resultType으로 dao에서 INT로 받기 때문에 String으로 변환 필요 -->
     <select id="DupleIdCk" parameterType="MemberVO" resultType="int">
-    select
-      count(*)
-    from
-      fishing.member
-    where
-      memberId = #{memberId}
+      select
+       count(*)
+      from
+       fishing.member
+      where
+       memberId = #{memberId}
     </select>
 
     <!-- 회원가입 데이터 적재 실행 쿼리 -->
     <insert id="InsertMember" parameterType="MemberVO">
-      
        insert into fishing.member 
-       values (#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberIdCk}, #{memberHP}, 0, NOW())
-       
+       values (#{memberId}, #{memberPw}, #{memberName}, #{memberMail}, #{memberHP}, 0, NOW())
     </insert>
+
+    <!-- 로그인 쿼리 -->
+    <!-- SELECT로 결과값을 출력하기 위해 Type을 VO로 맞춰준다 -->
+    <select id="Login"  resultType="MemberVO">
+       select memberId, memberPw
+       from fishing.member
+       where memberId = #{memberId}
+       and   memberPw = #{memberPw}
+    </select>
 
 </mapper>

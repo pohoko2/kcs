@@ -17,9 +17,11 @@ public class MemberServiceImpl implements MemberService {
 
 	// 회원 가입
 	@Override
-	public void InsertMember(MemberVO member) {
+	public void InsertMember(MemberVO member) 
+	{
 		System.out.println("회원가입 동작 : MemberServiceImpl");
-		if(member == null) {
+		if(member == null) 
+		{
 			return; // 반환처리
 		}
 		mdao.InsertMember(member);
@@ -27,9 +29,17 @@ public class MemberServiceImpl implements MemberService {
 	
 	// 회원 ID 중복체크 여부 확인
 	@Override
-	public int DupleIdCk(MemberVO member) {
+	public int DupleIdCk(MemberVO member) 
+	{
 		System.out.println("회원 ID중복 체크 동작 : MemberServiceImpl");
 		return mdao.DupleIdCk(member);
 	}
-	
+
+	// 회원 로그인
+	@Override
+	public MemberVO Login(MemberVO member) 
+	{
+		System.out.println("회원 로그인 체크 동작 : MemberServiceImpl");	
+		return mdao.Login(member);
+	}
 }

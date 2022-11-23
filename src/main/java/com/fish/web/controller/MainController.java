@@ -1,22 +1,25 @@
 package com.fish.web.controller;
 
-import java.util.Locale;
 
-import javax.servlet.http.HttpServletRequest;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class MainController {
-	
+public class MainController 
+{
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, HttpServletRequest request, Model model) {
-				
-		return "common/Fishmain";
+	// MainController 클래스 내의 로그를 출력
+		private static final Logger I = LoggerFactory.getLogger(MemberController.class);
+
+	@RequestMapping(value="/", method=RequestMethod.GET)
+	public String Main_Move() 
+	{
+		I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 메인 페이지 이동");
+		return "index";
 	}
 	
 }

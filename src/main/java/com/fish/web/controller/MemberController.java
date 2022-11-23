@@ -4,7 +4,9 @@ package com.fish.web.controller;
 
 import java.io.PrintWriter;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.TypeReference;
@@ -18,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.fish.web.domain.MemberVO;
 import com.fish.web.service.MemberService;
@@ -47,7 +50,7 @@ public class MemberController
 	// MemberController 클래스 내의 로그를 출력
 	private static final Logger I = LoggerFactory.getLogger(MemberController.class);
 		
-	// 회원가입 처리 동작
+	// 회원가입 처리 동작 URL
 	// http://localhost:8088/member/signup
 	
 	//회원가입 페이지 이동
@@ -58,7 +61,7 @@ public class MemberController
 	}
 	
 	// 회원가입
-	@RequestMapping(value="/member/signup", method = RequestMethod.POST)
+	@RequestMapping(value="/signup", method = RequestMethod.POST)
 	public String Register_Action(MemberVO member) throws Exception 
 	{
 		I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 회원가입 진입");
@@ -73,7 +76,7 @@ public class MemberController
 		service.InsertMember(member);
 		I.info("회원가입 처리성공 POST");
 	
-		return "";	
+		return "redirect:/member/login";	
 	}	
 	
 	// 회원 ID 중복체크 ajax 컨트롤러.
@@ -82,7 +85,10 @@ public class MemberController
 	@ResponseBody
 	// HTTP Body안에 JSON 처리를 위해 RequestBody 요청처리, JSON 데이터 반환 처리를 위해 HttpServletResponse, Model 사용
 	public String MemberDupleIdCk(@RequestBody String filterJSON, HttpServletResponse response, Model mo) throws Exception 
-	{   // JSONObject는 JSON형태의 데이터를 관리해주는 메서드이다. JSON 데이터를 담기위해 jsonmap 객체 생성
+	{
+		I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 회원ID 중복체크 진입");
+		
+	    // JSONObject는 JSON형태의 데이터를 관리해주는 메서드이다. JSON 데이터를 담기위해 jsonmap 객체 생성
 		// 참고 사이트 : https://interconnection.tistory.com/137
 		JSONObject jsonmap = new JSONObject();
 		try
@@ -94,7 +100,7 @@ public class MemberController
 		 // 멤버ID 조회 Select 쿼리 실행값 "memberIdCk"에 반환
 		 int idCnt = service.DupleIdCk(member);
 		 
-		 // ajax, data:json 에 담을 파라미터값
+		 // ajax, data:json 에 담을 파라미터값 반환
 		 jsonmap.put("res", "ok");
 		 jsonmap.put("idCnt", idCnt);
 		 
@@ -110,5 +116,44 @@ public class MemberController
 		PrintWriter out = response.getWriter();
 		out.print(jsonmap);
 		return null;
+	}
+	
+	// 로그인 페이지 이동
+	@RequestMapping(value="/login", method=RequestMethod.GET)
+	public void Login_Move() 
+	{
+		I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 로그인 페이지 이동");
+	}
+	
+	// 회원 로그인 컨트롤러
+	@RequestMapping(value="/login", method=RequestMethod.POST)
+	public String Login(MemberVO member, HttpServletRequest req, RedirectAttributes reatt) throws Exception
+	{
+		I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 회원 로그인 진입");
+		
+		// 로그인 ID, PW 정보 login 객체에 담아서 유효성 검증
+		// setAttribute "member"는 Login.jsp 에서 사용
+		HttpSession session = req.getSession();
+		MemberVO login = service.Login(member);
+		if(login == null) 
+		{
+			int result=0;  						   // 일치하지 않는 아이디, 비밀번호 입력 경우
+			reatt.addFlashAttribute("result", result);
+			return "redirect:/member/login";
+		} else {
+			session.setAttribute("member", login); // 일치하는 아읻, 비밀번호 경우 (로그인 성공)
+		}					
+				
+		// 로그인 후 메인 홈페이지로 이동
+		return "redirect:/fishmain";
+	}
+	
+	// 회원 로그아웃 컨트롤러
+	@RequestMapping(value="/logout", method=RequestMethod.GET)
+	public String Logout(HttpSession session) throws Exception
+	{
+		session.invalidate();
+		// 로그아웃 후 메인 홈페이지로 이동
+		return "redirect:/";
 	}
 }

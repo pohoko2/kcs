@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ko">
+<%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>
 <head>
 	<meta charset="UTF-8">
 	
-	<title>덕적바다낚시</title>
-	<meta name="title" content="인천배낚시 전문 덕적바다낚시" />
-	<meta name="description" content="인천배낚시 전문 덕적바다낚시와 함께 소중한 시간, 아름다운 추억을 만들어 보세요.">
+	<title>백구바다낚시</title>
+	<meta name="title" content="인천배낚시 전문 백구바다낚시" />
+	<meta name="description" content="인천배낚시 전문 백구바다낚시와 함께 소중한 시간, 아름다운 추억을 만들어 보세요.">
 	<meta name="publisher" content="물반고기반 - 국내 최초 바다, 민물 낚시 통합 실시간 예약 포털사이트" />
-	<meta name="author" content="덕적바다낚시" />
+	<meta name="author" content="백구바다낚시" />
 	<meta name="robots" content="index,follow" />
 	<meta name="distribution" content="global" />
 	<meta name="classification" content="낚시, 피싱, 바다낚시, 예약, 생활낚시, 체험낚시, 시간배낚시" />
-	<meta name="subject" content="바다낚시, 인천배낚시, 인천선상낚시, 시간배, 낚시, 낚시배, 체험배, 덕적바다낚시, 덕적호" />
+	<meta name="subject" content="바다낚시, 인천배낚시, 인천선상낚시, 시간배, 낚시, 낚시배, 체험배, 백구바다낚시, 백구호" />
 	<meta name="keywords" content="인천배낚시,주꾸미,쭈꾸미,인천중구낚시,쭈꾸미낚시,우럭,광어,인천남항,우럭낚시,광어낚시">
 	<link href="https://img.moolban.com" rel="dns-prefetch">
 	<link href="https://www.djfishing.com" rel="dns-prefetch">
 	<link rel="canonical" href="https://www.djfishing.com" />
 	<link rel="alternate" href="https://www.djfishing.com" />
 	<meta property="og:url" content="https://www.djfishing.com" />
-	<meta property="og:title" content="덕적바다낚시">
-	<meta property="og:site_name" content="덕적바다낚시" />
+	<meta property="og:title" content="백구바다낚시">
+	<meta property="og:site_name" content="백구바다낚시" />
 	<meta property="og:type" content="website" />
     <meta property="og:image" content="https://img.moolban.com/unsafe/400x220/filters:no_upscale()/hosting/56/main_banner/acba0ec59ed19d3c3e88fd9c4637e85c.jpg?date=1567491820">
 
@@ -31,42 +31,10 @@
     <!-- meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <!-- css -->
-<link rel="stylesheet" href="https://www.djfishing.com/asset/W/css/swiper.min.css">
-<link rel="stylesheet" href="https://www.djfishing.com/asset/W/css/datepicker.min.css">
-<link rel="stylesheet" href="https://www.djfishing.com/asset/common/js/plugins/sweetalert/sweetalert.css">
-<link rel="stylesheet" href="https://www.djfishing.com/asset/common/js/plugins/swiper/swiper.min.css">
-<link rel="stylesheet" href="https://www.djfishing.com/asset/W/css/load7.css">
-<link rel="stylesheet" href="https://www.djfishing.com/asset/W/css/moolban.min.css?rand=1630972882">
-<link rel="stylesheet" href="https://www.djfishing.com/asset/W/css/moolban4.min.css?rand=1630972882"> <!--// C타입 단독 css -->
-<link rel="stylesheet" href="https://www.djfishing.com/asset/W/css/type4_reserve.css?rand=1630972882">
+    
+<!-- <link rel="stylesheet" href="https://www.djfishing.com/asset/W/css/moolban.min.css?rand=1630972882"> -->
 
-<!-- script -->
-<script src="https://www.djfishing.com/asset/common/js/plugins/jquery-1.11.3.min.js"></script>
-<script src="https://www.djfishing.com/asset/common/js/plugins/jquery-ui.js"></script>
-<script src="https://www.djfishing.com/asset/common/js/plugins/swiper/swiper.min.js"></script>
 
-<!-- Valication -->
-<script src="https://www.djfishing.com/asset/common/js/plugins/validation/jquery.validate.min.js"></script>
-<script src="https://www.djfishing.com/asset/common/js/plugins/validation/additional-methods.min.js"></script>
-<script src="https://www.djfishing.com/asset/common/js/plugins/validation/localization/messages_ko.min.js"></script>
-<script src="https://www.djfishing.com/asset/common/js/plugins/validation/validation_method.js"></script>
-
-<!-- lazyload -->
-<script src="https://www.djfishing.com/asset/common/js/plugins/lazyload/jquery.lazyload.js"></script>
-
-<!-- jQuery Form -->
-<script src="https://www.djfishing.com/asset/common/js/plugins/ajaxForm/jquery.form.min.js"></script>
-
-<!-- sweetalert IE 9 -->
-<script src="https://www.djfishing.com/asset/common/js/plugins/sweetalert/sweetalert.min.js"></script>
-
-<!-- moolban -->
-<script src="https://www.djfishing.com/asset/W/js/jandk.js?rand=1630972882"></script>
-<script src="https://www.djfishing.com/asset/W/js/moolban.min.js?rand=1630972882"></script>
-<script src="https://www.djfishing.com/asset/common/js/common.js?rand=1630972882"></script>
-<!--
-<script src="https://www.djfishing.com/asset/W/js/autoHide.js"></script>
--->
 <!-- google map -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoZ8MfWfj-cBhtmZwE3JMwkbyFN4ISsEQ"></script>
 
@@ -81,7 +49,7 @@
     </script>
 
     <!--영업팀 요청으로 야타피싱 유입경로 스크립트 추가-->
-        <title>덕적바다낚시</title>
+        <title>백구바다낚시</title>
 
             <link rel="shortcut icon" href="https://www.moolban.com/favicon/moolban/favicon.ico">
     
@@ -93,46 +61,37 @@
 </head>
 
 <body class="purple">
-    <h1 class="blind">덕적바다낚시</h1>
+    <h1 class="blind">백구바다낚시</h1>
     <!-- wrap -->
     <div class="wrap">
         <!-- header -->
         <!-- header -->
 <div class="header bg_white gradation_color">
     <div class="header-top">
-                <h2 class="heading"><a href="/">덕적바다낚시</a></h2>
+                <h2 class="heading"><a href="/">백구바다낚시</a></h2>
                 <div class="header-bookmark">
             <button type="button" class="btn_bookmark" id="favorite">
                 <i class="icon icon_bookmark"></i>
-                <span id="bookmark">덕적바다낚시 즐겨찾기</span>
+                <span id="bookmark">백구바다낚시 즐겨찾기</span>
             </button>
         </div>
         <div class="header-gnb">
             <ul class="gnb">
                                 <!-- 로그아웃상태 -->
-                <li class="gnb_item">
+                <div class="gnb_item">
                     <a href="/member/login">로그인</a>
                     <button type="button" class="member-btn">
-                        <i class="icon icon_member-menu"></i>
                     </button>
-                    <div class="member-menubox">
-                        <div class="menubox-rap">
-                            <div class="member-menuinner">
-                                <ul class="member-menu">
-                                    <!-- 로그인 안 한 경우 -->
-                                    <li class="member-menu_item">
-                                        <a href="/member/signup">회원가입</a>
-                                    </li>
-                                    <li class="member-menu_item">
-                                        <a class="reserve_view_popup">예약조회</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+               
+                <div>
+                <a href="/member/signup">회원가입</a>
+                    <button type="button" class="member-btn">
+                </div>
+                <a href="/member/login">예약조회</a>
+                    <button type="button" class="member-btn">
+                </div>
+                 </div>
                 <!--// 로그아웃상태 -->
-                            </ul>
         </div>
     </div>
     <div class="navigation navigation-bg">
@@ -155,10 +114,6 @@
                         <!-- TYPE 1 -->
             <!-- main-visual container -->
             
-<!-- 폰트 -->
-<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
-<!--// 폰트 -->
 
 <div class="slider-root">
     <div class="swiper-container swiper-visual visaul-type">
@@ -170,7 +125,7 @@
                                                                     <!--배경색상-->
                                     <div class="cover-image" style="background:#72caed;opacity:1;"></div>
                                                                 <div class="swiper-slide_inner">
-                                <img src="https://img.moolban.com/unsafe/1440x450/filters:no_upscale()/hosting/56/main_banner/acba0ec59ed19d3c3e88fd9c4637e85c.jpg?date=1567491820" alt="" onError="this.src='/asset/M/img/test/test_img01.jpg'" />
+                                <img src="https://blog.kakaocdn.net/dn/bKG69f/btqXu5csG8f/EAJVoY6gRqX7EjCbsN4bO0/img.jpg" alt="" onError="'" />
                                 </div>
                             </div>
                         </a>
@@ -192,7 +147,7 @@
                                 <div class="txt_box">
                                     <p class="tit1">인천바다낚시전문</p>
                                     <p class="tit2">아름다운 추억을</p>
-                                    <p class="tit2">덕적바다낚시와 함께</p>
+                                    <p class="tit2">백구바다낚시와 함께</p>
                                     <p class="tit3">친구끼리 활기찬 바다낚시를 즐겨보세요</p>
                                 </div>
                                 <div class="img_box">
@@ -219,7 +174,7 @@
             <ul class="pinfo-list">
                                 <li class="pinfo-item">
                     <span class="label">대표번호</span>
-                    010-6232-9479                </li>
+                    010-2040-4778               </li>
                                 <!--
                 <li class="pinfo-item">
                     <span class="label">업주번호</span>
@@ -234,10 +189,10 @@
             <ul class="pinfo-list">
                 <li class="pinfo-item">
                     <span class="label">대표주소</span>
-                    인천 중구 축항대로 142                </li>
+                    동해 어딘가...                </li>
                 <li class="pinfo-item">
                     <span class="label">출조항구</span>
-                    인천광역시 중구 인천남항                </li>
+                    어디가될깡
             </ul>
         </div>
         <div class="pinfo-box pinfo-box3">
@@ -245,18 +200,38 @@
                 <li class="pinfo-item">
                     신한(통합)은행                </li>
                 <li class="pinfo-item pinfo-item_bank-number">
-                    <span class="color-primary">110-536-460712</span>
+                    <span class="color-primary">1234-567-89</span>
                 </li>
                 <li class="pinfo-item">
-                    예금주: 김미나                </li>
+                    예금주: 철수                </li>
             </ul>
         </div>
     </div>
+    
+    
+<!-- 예약가능 상품 -->
+<div class="section">
+<h3 class="sub-heading">예약 및 현황</h3>
+    <div class="status-root">
+        <div class="form-group p-right">
+            <!-- TODO: 선단의 경우 배 선택 -->
+                        <a class="btn bg-primary btn_write btn_reserve_go" data-c_key="7730">
+              <span class="color-white">예약 및 현황 자세히 보기</span>
+            </a>
+        </div>
+
+        <div id="main_reserve_list">
+        </div>
+    </div>
+</div>
+<!--// 예약가능 상품 -->
+<hr class="line" />
+    
         <div class="partner-greating">
-        <h3 class="section-heading">덕적바다낚시 출조 공지
+        <h3 class="section-heading">백구바다낚시 출조 공지
                     </h3>
         <p>
-            <strong>쭈꾸미 시간배 낚시 덕적호 입니다.<br />
+            <strong>쭈꾸미 시간배 낚시 백구호 입니다.<br />
 <br />
 9월1일부터~~ 쭈꾸미 갑오징어 출항합니다.<br />
 <br />
@@ -331,86 +306,69 @@ function btn_ps_login(target, key)
                     
 
 
-<!-- 예약가능 상품 -->
-<div class="section">
-<h3 class="sub-heading">예약 및 현황</h3>
-    <div class="status-root">
-        <div class="form-group p-right">
-            <!-- TODO: 선단의 경우 배 선택 -->
-                        <a class="btn bg-primary btn_write btn_reserve_go" data-c_key="7730">
-              <span class="color-white">예약 및 현황 자세히 보기</span>
-            </a>
-        </div>
-
-        <div id="main_reserve_list">
-        </div>
-    </div>
-</div>
-<!--// 예약가능 상품 -->
-<hr class="line" />
 
 
 <!-- 조황 -->
 <div class="section">
     <h3 class="sub-heading">
         최신 조황
-        <!-- <em class="color-primary">604</em> -->
+        <!-- <em class="color-primary">615</em> -->
     </h3>
 
     <div class="realtime-root">
         <ul class="realtime-list">
                         <li class="realtime-item">
-                <a href="/talk/view/231852?count=0">
+                <a href="/talk/view/233488?count=0">
                     <span class="image">
-                        <img src="https://img.moolban.com/unsafe/220x124/filters:no_upscale()/talk/20221102/8228725ca3ddf65f25f0916159d69e4c.JPG?date=1667433726"
+                        <img src="https://img.moolban.com/unsafe/220x124/filters:no_upscale()/talk/20221120/ed93d27c689c658144404a1bdbe9a017.jpg?date=1669097966"
                             alt="" />
                     </span>
                     <div class="realtime-info">
                         <em class="title">
                             <span class="badge badge_tertiary"><i class="color-tertiary">갑오징어</i></span>
-                            11월2일 인천시간배낚시 덕적호 오전 조황사진                        </em>
+                            11월20일 인천 시간배낚시 백구호 조황사진                        </em>
                         <p class="description">
-                            다들수고하셨습니다. 카메라 바데리 없어서 다 못 찍었네요 .주꾸미 갑오징어 씨알이 좋아졌네요.                        </p>
+                                                    </p>
                         <div class="etc-info">
-                            <span>20시간전</span>
+                            <span>2022-11-20</span>
                             <span>댓글 0</span>
                         </div>
                     </div>
                 </a>
             </li>
                         <li class="realtime-item">
-                <a href="/talk/view/231728?count=0">
+                <a href="/talk/view/233429?count=0">
                     <span class="image">
-                        <img src="https://img.moolban.com/unsafe/220x124/filters:no_upscale()/talk/20221101/d484a91a9c725b2c8925e33c49840491.JPG?date=1667401373"
+                        <img src="https://img.moolban.com/unsafe/220x124/filters:no_upscale()/talk/20221120/4c05e7242cc90563f2bc915399b2f444.JPG?date=1669098102"
                             alt="" />
                     </span>
                     <div class="realtime-info">
                         <em class="title">
                             <span class="badge badge_tertiary"><i class="color-tertiary">갑오징어</i></span>
-                            10월31일 인천 시간배낚시 덕적호 오전 조황사진                        </em>
+                            11월19일 인천 시간배낚시 백구호 조황사진                        </em>
                         <p class="description">
                                                     </p>
                         <div class="etc-info">
-                            <span>2022-11-01</span>
-                            <span>댓글 0</span>
+                            <span>2022-11-20</span>
+                            <span>댓글 1</span>
                         </div>
                     </div>
                 </a>
             </li>
                         <li class="realtime-item">
-                <a href="/talk/view/231570?count=0">
+                <a href="/talk/view/233428?count=0">
                     <span class="image">
-                        <img src="https://img.moolban.com/unsafe/220x124/filters:no_upscale()/talk/20221030/931e1ab8b23c624e4c97da1b4a5f04d5.JPG?date=1667427174"
+                        <img src="https://img.moolban.com/unsafe/220x124/filters:no_upscale()/talk/20221120/cbc7e4e440c86bcbf88de80824f9daf7.jpg?date=1669098112"
                             alt="" />
                     </span>
                     <div class="realtime-info">
                         <em class="title">
                             <span class="badge badge_tertiary"><i class="color-tertiary">갑오징어</i></span>
-                            10월30일 인천 시간배낚시 덕적호 조황사진                        </em>
+                            11월16일 인천 종일배낚시 우럭 조황사진                        </em>
                         <p class="description">
                                                     </p>
                         <div class="etc-info">
-                            <span>2022-10-30</span>
+                            <span>2022-11-20</span>
                             <span>댓글 0</span>
                         </div>
                     </div>
@@ -571,56 +529,32 @@ function btn_ps_login(target, key)
 <!--// bottom_navigation -->
 
 <!-- footer -->
-<div class="footer">
+<div class="footer"  style="text-align:center;">
     <div class="inner clear">
-        <div class="f-left">
             <h2 class="footer-title">
-				덕적호			</h2> 
+				백구호			</h2> 
             <div class="footer-info">
                 <div class="footer-info_block">
                     <span class="footer-info_item">
-						대표 : 김미나					</span>
+						대표 : 김철순					</span>
                     <span class="footer-info_item">
-						대표전화 : 010-6232-9479					</span>
+						대표전화 : 010-2040-4778					</span>
                     <span class="footer-info_item">
-						인천 중구 축항대로 142					</span>
+						동해 바다 어딘가					</span>
                                     </div>
                 <div class="footer-info_block">
                     <span class="footer-info_item">
-						사업자 등록번호 : 686-59-00501					</span>
+						사업자 등록번호 : 언젠간 나온다					</span>
                                         </div>
                     <p class="copyright">
 						Copyright 
-						덕적호. All Rights Reserved. &nbsp;&nbsp; Created by ICE&V(물반고기반).
+						백구호. All Rights Reserved. &nbsp;&nbsp; Created by 백구.
 					</p>
             </div>
-        </div>
-        <div class="f-right">
-            <h2 class="footer-logo">
-                <!-- <span class="blind">아이스앤브이</span> -->
-                <a href="https://www.moolban.com/service/company_reg" target="_blank" " class="footer-link">홈페이지 제작문의</a>
-            </h2>
-            <div class="footer-info">
-                <!-- <div class="footer-info_block">
-                    <span class="footer-info_item"><a href="https://www.moolban.com/">ICE&V(물반고기반)</a>으로부터 제작된 홈페이지입니다.</span>
-                </div> -->
-                <div class="footer-info_block">
-                    <span class="footer-info_item footer-info_item--light">
-                        (주)아이스앤브이는<br />
-                        통신판매중개자로서 통신판매의 당사자가 아니며,<br />
-                        상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은<br />
-                        각 판매자에게 있습니다.
-                    </span>
-                </div>
-            </div>
-            
-        </div>
     </div>
     <div class="footer_bar"></div>
 </div>
 <!--// footer -->
-        <!-- footer e -->
-    </div>
     <!--// wrap -->
 
     <!-- 토스트알림-->
