@@ -291,7 +291,7 @@
 
 <!-- footer close --> 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins)1 --> 
 <script src="../resources/js/jquery.min.js" type="text/javascript"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="../resources/js/bootstrap.min.js" type="text/javascript"></script> 
