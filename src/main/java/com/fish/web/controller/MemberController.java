@@ -145,7 +145,7 @@ public class MemberController
 		}					
 				
 		// 로그인 후 메인 홈페이지로 이동
-		return "redirect:/fishmain";
+		return "redirect:/";
 	}
 	
 	// 회원 로그아웃 컨트롤러
