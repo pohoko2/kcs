@@ -207,7 +207,7 @@
 						<span style="color:#B84A5B;font-size:12px;">55</span>
 					</td>
 					<td rowspan="2">
-						<span class="tdsp_red" style="background:#000;padding:5px 10px;color:#fff;border-radius:5px;">출조없음</span>
+						<span class="tdsp_red" style="background:#000;padding:5px 10px;color:#fff;border-radius:5px;">예약하기</span>
 					</td>
 				</tr>
 				<tr>
