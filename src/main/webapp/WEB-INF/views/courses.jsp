@@ -300,7 +300,7 @@
 <script type="text/javascript" src="../resources/js/sticky-header.js"></script> 
 
 
-<!-- 달력 스크립트c. -->
+<!-- 달력 스크립트c.. -->
 <script>
 
 // 이전달로 가기
