@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* 참고 사이트 : https://blog.naver.com/PostView.naver?blogId=mide995&logNo=222102060233&categoryNo=406&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search */
+body {
+    font-family: NanumSquare, '나눔 스퀘어', sans-serif;
+}
+
+
+.date-month caption {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.date-month {
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    margin: 0 auto;
+    width: 590px;
+    font-size: 12px;
+}
+
+.date-month th,
+.date-month td {
+    border-top: 1px solid #e4e4e4;
+    border-left: 1px solid #e4e4e4;
+}
+
+th {
+    height: 25px;
+    color: #777;
+}
+
+td {
+    height: 80px;
+    color: #777;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.inner {
+    position: relative;
+    height: 70px;
+    padding: 5px;
+}
+
+.date.dimmed {
+    color: #e7e7e7;
+}
+
+em.text {
+    display:block;
+    font-style: normal;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sun {
+    color:#f44e4e;
+}
+
+.sat {
+    color: #00c;
+}
+
+.lunar {
+    position: absolute;
+    top: 6px;
+    right: 6px; /* inner에 패딩 5px 있는걸 감안하여 6으로 했음 */
+    color: #bababa;
+}
+
+.today {
+    border: 1px solid #e0e0bf;
+    background-color: #ffffd5;
+}
+
+
+
+/* IR */
+
+.blind {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
