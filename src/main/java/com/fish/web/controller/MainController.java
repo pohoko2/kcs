@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class MainController 
 {
 
-	// MainController 클래스 내의 로그를 출력
+	// MainController 클래스 내의 로그를 출력.
 		private static final Logger I = LoggerFactory.getLogger(MemberController.class);
 
 	@RequestMapping(value="/", method=RequestMethod.GET)
