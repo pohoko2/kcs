@@ -173,7 +173,7 @@
    	  <span style="color:black;"> 신한은행 1234-5678-0101 예금주 : 백구</span>
    </p>	
 	
-	<!-- 예약 상세 정보 -->
+	<!-- 예약 상세 정보. -->
 	<div id="resid">
 		<table id="restable" border="1px">
 			<tbody>
