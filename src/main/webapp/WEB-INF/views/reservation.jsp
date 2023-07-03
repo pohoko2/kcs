@@ -419,11 +419,11 @@ $(function () {
 <!-- 예약하기 팝업 스크립트 시작 -->
 function openReservationPopup() {
 	  // 팝업 창을 가운데에 위치시키기 위한 좌표 계산
-	  var left = (window.innerWidth / 2) - (1000 / 2);
-	  var top = (window.innerHeight / 2) - (800 / 2);
+	  var left = (window.innerWidth / 2) - (600 / 2);
+	  var top = (window.innerHeight / 2) - (400 / 2);
 	  
 	  // 팝업 창 옵션 설정
-	  var options = 'width=600,height=400,left=' + left + ',top=' + top;
+	  var options = 'width=700,height=600,left=' + left + ',top=' + top;
 	  
 	  // 예약하기 페이지 URL
 	  var url = 'reserve_detail'; // 예: reservation.html
