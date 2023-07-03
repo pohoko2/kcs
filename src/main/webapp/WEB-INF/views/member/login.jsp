@@ -7,6 +7,77 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrap {
+            background-color: #f2f2f2;
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .logo_wrap {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .id_wrap,
+        .pw_wrap {
+            margin-bottom: 20px;
+        }
+
+        .id_input_box,
+        .pw_input_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .id_input,
+        .pw_input {
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .login_warn {
+            margin-bottom: 20px;
+            color: red;
+        }
+
+        .login_button_wrap,
+        .member_signup_wrap {
+            margin-bottom: 20px;
+        }
+
+        .login_button,
+        .member_signup {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
@@ -43,7 +114,7 @@
 			<%-- 회원가입 이동 버튼--%>
 			<%-- 추 후 onClick 리다이렉션 주소 변경 필요함--%>
 				<div class="login_button_wrap">
-					<input type="button" class="member_signup" value="회원가입하기" onClick="location.href='http://localhost:8088/member/signup'">
+					<input type="button" class="member_signup" value="회원가입하기" onClick="location.href='http://localhost/member/signup'">
 				</div>
 			</div>
 		</form>

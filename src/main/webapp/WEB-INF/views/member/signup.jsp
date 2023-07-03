@@ -7,6 +7,72 @@
 
 <head>
  
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .input_area {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .input_ck {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .input_memberidck {
+            margin-left: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            width: 100px;
+            height: 40px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+ 
 </head>
  <input type="hidden" id="memberIdCk" name="memberIdCk" value="N"/>
  

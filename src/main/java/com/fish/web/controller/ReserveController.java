@@ -11,8 +11,16 @@ public class ReserveController
 {
 		private static final Logger I = LoggerFactory.getLogger(ReserveController.class);
 
-		@RequestMapping(value="/courses", method=RequestMethod.GET)
+		@RequestMapping(value="/reservation", method=RequestMethod.GET)
 		public void Reserve_Move() 
+		{
+			I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 예약하기 ");
+		}
+		
+		
+		
+		@RequestMapping(value="/reserve_detail", method=RequestMethod.GET)
+		public void Reserve_detail_Move() 
 		{
 			I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 예약하기 ");
 		}

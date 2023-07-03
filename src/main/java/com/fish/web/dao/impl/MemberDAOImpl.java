@@ -17,7 +17,7 @@ public class MemberDAOImpl implements MemberDAO
 	private SqlSessionTemplate sqlSession; // mapper위치까지 접근가능 but mapper가 여러개일수 있음=>mapper 구분필요
 	
 	// mapper 구분하는 값 namespace
-    private static final String namespace = "com.fish.web.dao.impl";
+	private static final String namespace = "com.fish.web.dao.impl";
     
 	
 	public void setSqlSession(SqlSessionTemplate sqlSession) 

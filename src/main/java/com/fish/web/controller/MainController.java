@@ -19,7 +19,7 @@ public class MainController
 	public String Main_Move() 
 	{
 		I.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>> 메인 페이지 이동");
-		return "index";
+		return "home";
 	}
 	
 }
